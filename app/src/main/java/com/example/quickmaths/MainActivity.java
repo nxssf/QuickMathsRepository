@@ -20,7 +20,13 @@ public class MainActivity extends AppCompatActivity {
         Button startButton = findViewById(R.id.start);
         Button additionalResourcesButton = findViewById(R.id.additionalResources);
 
+        startButton.setOnClickListener(new View.OnClickListener(){
 
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ChoiceActivity.class));
+            }
+        });
 
     }
 }
