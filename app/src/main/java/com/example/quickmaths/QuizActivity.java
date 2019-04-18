@@ -41,6 +41,8 @@ public class QuizActivity extends AppCompatActivity {
         next = findViewById(R.id.next);
         next.setText("Next");
 
+        instruction = findViewById(R.id.instruction);
+
     }
 
     public void updateQuestion(View view) {
