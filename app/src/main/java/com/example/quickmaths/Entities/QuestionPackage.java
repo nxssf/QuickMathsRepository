@@ -9,24 +9,31 @@ public class QuestionPackage {
     @SerializedName("id")
     @Expose
     private String id;
+
     @SerializedName("question")
     @Expose
     private String question;
+
     @SerializedName("choices")
     @Expose
     private List<String> choices = null;
+
     @SerializedName("correct_choice")
     @Expose
     private Integer correctChoice;
+
     @SerializedName("instruction")
     @Expose
     private String instruction;
+
     @SerializedName("category")
     @Expose
     private String category;
+
     @SerializedName("topic")
     @Expose
     private String topic;
+
     @SerializedName("difficulty")
     @Expose
     private String difficulty;

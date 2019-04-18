@@ -18,12 +18,12 @@ public class ChoiceActivity extends AppCompatActivity {
         Button practiseButton = findViewById(R.id.practiseButton);
         Button quizButton = findViewById(R.id.quizButton);
 
-        /*For now, the practiseButton will also direct the user to the Quiz Activity*/
+        /*For now, the practiseButton will also direct the user to the Topic Activity*/
         practiseButton.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ChoiceActivity.this, QuizActivity.class));
+                startActivity(new Intent(ChoiceActivity.this, TopicActivity.class));
             }
         });
 
@@ -31,7 +31,7 @@ public class ChoiceActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ChoiceActivity.this, QuizActivity.class));
+                startActivity(new Intent(ChoiceActivity.this, TopicActivity.class));
             }
         });
     }

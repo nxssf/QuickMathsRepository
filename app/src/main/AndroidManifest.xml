@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Notes.NotesCreator"></activity>
+        <activity android:name=".AdditionalResourcesActivity"></activity>
+        <activity android:name=".TopicActivity" />
+        <activity android:name=".Notes.NotesCreator" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".ChoiceActivity" />
         <activity android:name=".MainActivity">
