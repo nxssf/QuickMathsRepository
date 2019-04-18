@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.quickmaths.Entities.QuestionService;
 import com.example.quickmaths.Entities.QuestionDBResponse;
 import com.example.quickmaths.Entities.QuestionService;
 import com.google.gson.Gson;
@@ -29,12 +30,12 @@ public class QuizActivity extends AppCompatActivity {
 
         Gson gson = new GsonBuilder().create();
 
-        QuestionService service = new Retrofit.Builder().baseUrl("https://math.ly/api/v1/algebra/linear-equations.json?difficulty=beginner")
+        QuestionService service = new Retrofit.Builder().baseUrl("https://math.ly/api")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build()
                 .create(QuestionService.class);
 
-        // Call<QuestionDBResponse> call = service.getClass();
+        // Call<QuestionDBResponse> call = service.getQuestion();
 
     }
 }

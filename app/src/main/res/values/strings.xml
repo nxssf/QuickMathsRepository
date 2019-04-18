@@ -7,4 +7,5 @@
     <string name="view_notes">View Notes</string>
     <string name="title_activity_notes_creator">NotesCreator</string>
     <string name="type_here">Type here...</string>
+    <string name="quiz">Quiz</string>
 </resources>
